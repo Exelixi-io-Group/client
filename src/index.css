@@ -1,0 +1,21 @@
+*,::after,::before{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  background: white;
+}
+
+.el-landing-layout {
+  height: 100vh;
+  display: grid; /* Use CSS grid */
+  grid-template-columns: 1fr 2fr; /* Divide into two equal columns */
+  gap: 10px; /* Add gap between columns */
+}
+
+.center{
+  display: grid;
+  place-items: center;
+}
