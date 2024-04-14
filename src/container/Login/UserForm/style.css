@@ -1,6 +1,7 @@
 .user-registration {
   height: calc(100vh - 200px);
   width: 60%;
+  margin-top: 40px;
 }
 
 .form-container {
@@ -61,5 +62,4 @@ input[type="text"] {
   margin: 0 auto;
   height: 100%;
  }
- 
 }
