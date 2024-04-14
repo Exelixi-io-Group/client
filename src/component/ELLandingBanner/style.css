@@ -1,0 +1,17 @@
+.el-landing-banner-wrapper {
+  width: auto;
+}
+.logo {
+  width: 100% ;
+}
+
+.el-landing-banner-text {
+    transform: translateY(-80px);
+  }
+
+@media screen and (max-width: 768px) {
+
+  .el-landing-banner-text {
+    transform: translateY(-100px);
+  }
+}

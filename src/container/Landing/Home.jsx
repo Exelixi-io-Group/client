@@ -1,5 +1,5 @@
 export const Home =()=>{
     return <>
-    Home
+    Find remote jobs with companies that care about your work more than your resume.
     </>
 }

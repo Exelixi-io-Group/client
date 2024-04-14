@@ -1,21 +1,93 @@
-*,::after,::before{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
 }
 
-body{
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #006442; /* Change scrollbar thumb color */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #004626; /* Change scrollbar thumb color on hover */
+}
+
+body {
   height: 100vh;
-  background: white;
+  color: whitesmoke;
+  z-index: 1;
 }
 
-.el-landing-layout {
+.grid-layout{
   height: 100vh;
   display: grid; /* Use CSS grid */
   grid-template-columns: 1fr 2fr; /* Divide into two equal columns */
   gap: 10px; /* Add gap between columns */
 }
 
-.center{
+.el-landing{ 
+  z-index: 2;
+  width: 100%;
+  background-color: black;
+  background-image: url("https://assets-global.website-files.com/65159e844f8f08a72cefa2aa/65159e844f8f08a72cefa419_footer%20bg%20latest.svg");
+  background-size: cover;
+  background-position: -100px 20%;
+}
+
+.center {
   display: grid;
   place-items: center;
 }
+
+/* Button styles */
+.button {
+  width: 100%;
+  background-color: #006442;
+  margin-bottom: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #004626; /* Darker shade on hover */
+}
+
+/* Login */
+
+.el-login{
+  background-color: #F5EFE6;
+}
+
+@media screen and (max-width: 768px) {
+  body, .grid-layout, .el-login {
+    width: 100vw;
+    height: 100%;
+  background-color: #F5EFE6;
+
+  }
+
+  .grid-layout {
+    display: block;
+  }
+}
+

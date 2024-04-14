@@ -1,10 +1,13 @@
-import { LandingRoute } from './routes';
+import { LandingRoute, LoginRoutes } from './routes';
 
 
 function App() {
 
   return (
+    <>
     <LandingRoute/>
+    <LoginRoutes/>
+    </>
   )
 }
 

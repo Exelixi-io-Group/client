@@ -1,5 +1,5 @@
-export const Contact =()=>{
-    return <>
-    Contact
-    </>
+export const Contact = ()=>{
+  return <>
+  Contact
+  </>
 }

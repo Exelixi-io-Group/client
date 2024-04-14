@@ -1,0 +1,37 @@
+.el-multi-add-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.el-multi-add-inputs {
+  flex-grow: 9; /* Take up 80% of the space */
+  input{
+    margin-bottom: 20px;
+  }
+}
+
+.add-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #006442; /* You can change the color as needed */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* This creates the circle */
+  cursor: pointer;
+  font-size: 16px;
+}
+.el-chip-container{
+    margin-bottom: 8px;
+}
+.el-chip {
+  background-color: #004626;
+  border-radius: 10px;
+  font-size: 14px;
+  width: max-content;
+  padding: 4px;
+  color: white;
+  margin-right: 8px;
+}

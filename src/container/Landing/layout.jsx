@@ -1,15 +1,17 @@
 import PropTypes from 'prop-types';
 import { ELLandingBanner } from '../../component';
+import { Outlet } from "react-router-dom";
 
-export const LandingLayout = ({children})=>{
+
+export const LandingLayout = ()=>{
     return <>
-    <main className="el-landing-layout" >
+    <main className="el-landing grid-layout" >
 
         <div className='left-panel center'>
            <ELLandingBanner/>
         </div>
         <div className='right-panel center' >
-            {children}
+            <Outlet/>
         </div>
 
     </main>

@@ -1,0 +1,66 @@
+.user-registration {
+  height: calc(100vh - 200px);
+  width: 60%;
+}
+
+.form-container {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  color: #2e2d2b;
+  padding: 20px;
+  border: 1px solid #F5EFE6;
+  border-radius: 10px;
+  overflow-y: scroll;
+  background-color: transparent;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Add inset shadow effect */
+}
+
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-header {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 95%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #FFFAF2;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.el-landing-banner-text{
+  color: #2e2d2b;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+ .user-registration{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 100%;
+ }
+ 
+}
