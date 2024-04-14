@@ -79,15 +79,19 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  body, .grid-layout, .el-login {
+    .el-login {
     width: 100vw;
     height: 100%;
-  background-color: #F5EFE6;
-
+    background-color: #F5EFE6;
+    overflow: hidden;
   }
 
   .grid-layout {
     display: block;
+
+  }
+  .center{
+    width: calc(100% - 40px);
   }
 }
 

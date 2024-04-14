@@ -8,7 +8,7 @@ export const LandingLayout = ()=>{
     <main className="el-landing grid-layout" >
 
         <div className='left-panel center'>
-           <ELLandingBanner/>
+           <ELLandingBanner type='transparent' />
         </div>
         <div className='right-panel center' >
             <Outlet/>

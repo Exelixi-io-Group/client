@@ -1,11 +1,11 @@
-import {logo} from "../../assets";
+import {logo, transparentLogo} from "../../assets";
 import PropTypes from 'prop-types';
 import "./style.css"
 
-export const ELLandingBanner = ({bannerText})=>{
+export const ELLandingBanner = ({bannerText,type="solid"})=>{
    return <>
     <aside className="el-landing-banner-wrapper" >
-        <img className="logo" src={logo} alt="" />
+        <img className="logo" src={type=== "solid"?logo:transparentLogo} alt="" />
         <div className="el-landing-banner-text" >
             {bannerText}
         </div>
@@ -14,5 +14,6 @@ export const ELLandingBanner = ({bannerText})=>{
 }
 
 ELLandingBanner.propTypes={
-    bannerText:PropTypes.string
+    bannerText:PropTypes.string,
+    type:PropTypes.string
 }
