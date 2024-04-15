@@ -11,7 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 export const UserForm = () => {
   const [step, setStep] = useState(1);
   const [companyList, setCompanyList] = useState([]);
-  const { loading, error, data, fetchData } = useFetch();
+  const { error, data, fetchData } = useFetch();
 
   const nextStep = () => {
     setStep(step + 1);
@@ -58,7 +58,15 @@ export const UserForm = () => {
     },
   ];
 
-  console.log(loading, data, error);
+
+  useFetch(()=>{
+    if(data){
+      toast.success("Form Submitted")
+    }
+    if(error){
+      toast.error("Unable to submit form")
+    }
+  },[error,data])
 
   return (
     <>
@@ -107,16 +115,10 @@ export const UserForm = () => {
                 "POST",
                 values
               );
-
-              if (error) {
-                toast.error("Form Sumission Failed");
-              }
-              if (data) {
                 resetForm();
                 setCompanyList([]);
                 setSubmitting(false);
                 toast.success("Form Submitted");
-              }
               // Clear the form
             }}
           >

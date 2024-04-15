@@ -18,12 +18,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #006442; /* Change scrollbar thumb color */
+  background: #006442 !important; /* Change scrollbar thumb color */
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #004626; /* Change scrollbar thumb color on hover */
+  background: #004626 !important; /* Change scrollbar thumb color on hover */
 }
 
 body {

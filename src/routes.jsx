@@ -5,7 +5,11 @@ import { AboutUs } from "./container/Landing/AboutUs";
 import { Contact } from "./container/Landing/Contact";
 import { UserForm } from "./container/Login";
 import { LoginLayout } from "./container/Login/layout";
+import { AdminLayout } from "./container/Admin/layout";
+import { Dashboard } from "./container/Admin/Dashboard";
+import { Users } from "./container/Admin/Users";
 
+/* Landing Page Layout */
 export const LandingRoute = () => {
   return (
     <Routes>
@@ -18,6 +22,7 @@ export const LandingRoute = () => {
   );
 };
 
+/* Login Layout */
 export const LoginRoutes = () => {
   return (
     <Routes>
@@ -27,3 +32,15 @@ export const LoginRoutes = () => {
     </Routes>
   );
 };
+
+/* Admin Layout */
+export const AdminRoutes = ()=>{
+  return (
+    <Routes>
+      <Route path="/admin" element={<AdminLayout/>} >
+        <Route path="dashboard" element={<Dashboard/>} />
+        <Route path="Users" element={<Users/>} />
+      </Route>
+    </Routes>
+  )
+}

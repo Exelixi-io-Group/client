@@ -1,4 +1,4 @@
-import { LandingRoute, LoginRoutes } from './routes';
+import { AdminRoutes, LandingRoute, LoginRoutes } from './routes';
 
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
     <>
     <LandingRoute/>
     <LoginRoutes/>
+    <AdminRoutes/>
     </>
   )
 }

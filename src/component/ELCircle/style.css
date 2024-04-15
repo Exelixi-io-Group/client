@@ -1,0 +1,31 @@
+.el-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .el-circle-inner {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .el-circle-label{
+    text-align: center;
+  }
+  
+  .value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  

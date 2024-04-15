@@ -1,7 +1,7 @@
 .user-registration {
-  height: calc(100vh - 200px);
+  height: calc(100vh - 150px);
   width: 60%;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .form-container {
