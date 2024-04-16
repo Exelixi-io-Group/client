@@ -7,14 +7,14 @@ export const Home = () => {
       <section className="container el-hero-section">
         <div className="el-hero-header">
           <h1>
-            Find remote jobs with companies
+            Find tech jobs with companies
             <span className="meta-data-span-1"> that care </span>
             <span className="meta-data-span-2"> about your work </span>
             more than your resume.
           </h1>
         </div>
         <div className="el-hero-sub-header">
-          Break into a successful remote tech career with Pesto. Get flexible
+          Break into a successful tech career with Exelixi. Get flexible
           jobs with direct access to top companies.
         </div>
         <div className="el-hero-meta-data">
