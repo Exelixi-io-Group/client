@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export const Home = () => {
+  const navigate = useNavigate()
   return (
     <>
       <section className="container el-hero-section">
@@ -23,7 +26,7 @@ export const Home = () => {
             </div>
           
         </div>
-        <div className="el-hero-button">
+        <div onClick={()=>{navigate(`/login/user-registration`)}} className="el-hero-button">
           <div className="el-hero-button-text">Join Exelixi Today</div>
           <div className="colored-button-gradient-layer"> </div>
           <div className="colored-button-border-layer"></div>

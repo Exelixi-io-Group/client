@@ -23,6 +23,7 @@ export const NavMenu = ({activeItem,setActiveItem}) => {
       name="Referals"
       active={activeItem === "Referals"}
       onClick={()=>setActiveItem("Referals")}
+      disabled
     >
       Referals
     </MenuItem>

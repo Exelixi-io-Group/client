@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import { transparentLogo } from "../../assets";
 
 export const Header = () => {
+  const navigate = useNavigate()
   return (
     <>
       <div className="el-landing-header container">
@@ -20,11 +22,11 @@ export const Header = () => {
         </nav>
         <nav className="el-landing_right">
           <ul className="el-landing-menu">
-            <li className="landing-menu-items">Log In</li>
-            <li className="landing-menu-items glowing-button">
-              <div className="glowing-button-gradient"></div>
+            <li onClick={()=>navigate(`/admin`)} className="landing-menu-items">Log In</li>
+            <li onClick={()=>{navigate(`/login/user-registration`)}} className="landing-menu-items glowing-button">
+              <div  className="glowing-button-gradient"></div>
               <div className="glowing-button-inner">
-                <div className="glowing-button-text" >Join Exelixi today</div>
+                <div  className="glowing-button-text" >Join Exelixi today</div>
                 <div className="glowing-button-inner-overlay"></div>
               </div>
             </li>
