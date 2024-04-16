@@ -22,7 +22,10 @@ export const Home = () => {
             <i className="fa-regular fa-money-bill"></i><span> Average salaries of 10 LPA </span>
             </div>
             <div className="meta-data-items" >
-          <span> For Developers in India  </span><img className="india" width="18" height="18" src="https://img.icons8.com/color/18/india.png" alt="india"/>
+          <span> For Developers in India  </span>
+          <span className="india">
+          <img  width="18" height="18" src="https://img.icons8.com/color/18/india.png" alt="india"/>
+          </span>
             </div>
           
         </div>
