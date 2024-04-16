@@ -1,6 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { UserDetailsMapper } from "../../Shared";
 import "./style.css";
 import { ElMultiAddBox } from "../../../component";
@@ -58,15 +58,14 @@ export const UserForm = () => {
     },
   ];
 
-
-  useFetch(()=>{
-    if(data){
-      toast.success("Form Submitted")
+  useEffect(() => {
+    if (data) {
+      toast.success("Form Submitted");
     }
-    if(error){
-      toast.error("Unable to submit form")
+    if (error) {
+      toast.error("Unable to submit form");
     }
-  },[error,data])
+  }, [error, data]);
 
   return (
     <>
@@ -115,10 +114,9 @@ export const UserForm = () => {
                 "POST",
                 values
               );
-                resetForm();
-                setCompanyList([]);
-                setSubmitting(false);
-                toast.success("Form Submitted");
+              resetForm();
+              setCompanyList([]);
+              setSubmitting(false);
               // Clear the form
             }}
           >
